@@ -22,14 +22,14 @@ alt="ORB-SLAM2" width="400" height="400" border="0" /></a>
 
 ### Self-recorded dataset experiment
 <a href="https://youtu.be/HyLNq-98LRo" target="_blank"><img src="https://github.com/JinLn/MF-SLAM/blob/main/Examples/picture/mf12_6mm%2612mm.svg" 
-alt="6mm&12mm" width="300" height="300" border="0" /><img src="https://github.com/JinLn/MF-SLAM/blob/main/Examples/picture/mf12_12mm%2616mm.svg" 
-alt="12mm&16mm" width="300" height="300" border="0" /><img src="https://github.com/JinLn/MF-SLAM/blob/main/Examples/picture/mf12_16mm%2625mm.svg" 
-alt="16mm&25mm" width="300" height="300" border="0" /></a>
+alt="6mm&12mm" width="200" height="200" border="0" /><img src="https://github.com/JinLn/MF-SLAM/blob/main/Examples/picture/mf12_12mm%2616mm.svg" 
+alt="12mm&16mm" width="200" height="200" border="0" /><img src="https://github.com/JinLn/MF-SLAM/blob/main/Examples/picture/mf12_16mm%2625mm.svg" 
+alt="16mm&25mm" width="200" height="200" border="0" /></a>
 
 <a href="https://youtu.be/HyLNq-98LRo" target="_blank"><img src="https://github.com/JinLn/MF-SLAM/blob/main/Examples/picture/playground%20.svg" 
-alt="playground" width="300" height="300" border="0" /><img src="https://github.com/JinLn/MF-SLAM/blob/main/Examples/picture/Academic%20Building.svg" 
-alt="Academic_Building" width="300" height="300" border="0" /><img src="https://github.com/JinLn/MF-SLAM/blob/main/Examples/picture/library.svg" 
-alt="library" width="300" height="300" border="0" /></a>
+alt="playground" width="200" height="200" border="0" /><img src="https://github.com/JinLn/MF-SLAM/blob/main/Examples/picture/Academic%20Building.svg" 
+alt="Academic_Building" width="200" height="200" border="0" /><img src="https://github.com/JinLn/MF-SLAM/blob/main/Examples/picture/library.svg" 
+alt="library" width="200" height="200" border="0" /></a>
 
 # 1. License
 
