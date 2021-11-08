@@ -94,7 +94,7 @@ This will create **libMF-SLAM.so**  at *lib* folder and the executables in *Exam
 
 1. Download a sequence from http://www.cvlibs.net/datasets/kitti/eval_odometry.php
  ```
-    ./stereo_test /home/jinln/Desktop/ORB_SLAM3/Vocabulary/ORBvoc.txt /home/jinln/jinln/DATASET/kitti/MF-dyna_yaml/KITTI_stereo_00-02.yaml /home/jinln/jinln/DATASET/kitti/00
+    ./stereo_test ./Vocabulary/ORBvoc.txt /home/jinln/jinln/DATASET/kitti/MF-dyna_yaml/KITTI_stereo_00-02.yaml /home/jinln/jinln/DATASET/kitti/00
 ```
 
 3. Evaluation using [evo](https://github.com/MichaelGrupp/evo) tools
