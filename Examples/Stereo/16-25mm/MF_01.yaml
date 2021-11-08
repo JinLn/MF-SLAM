@@ -1,0 +1,146 @@
+%YAML:1.0
+
+#--------------------------------------------------------------------------------------------
+# Camera Parameters. Adjust them!
+#--------------------------------------------------------------------------------------------
+
+# ===> NOTICE: Add camera model here <===
+Camera.type: "PinHole"
+
+# Focus type combination "01"/"02"/"12"
+Camera.combine: "01"
+
+# Camera calibration and distortion parameters (OpenCV) 
+Camera.fx: 1.6003223575607426e+03
+Camera.fy: 1.6003223575607426e+03
+Camera.cx: 7.8914894104003906e+02
+Camera.cy: 4.3631155014038086e+02
+
+Camera.k1: -1.1094080097170179e-01
+Camera.k2: 1.5948619050594529e-01
+Camera.p1: -4.8616897835728591e-03
+Camera.p2: -1.3424886656017085e-02
+
+rightCamera.fx: 1.6003223575607426e+03
+rightCamera.cx: 4.3631155014038086e+02
+
+Camera.bFishEye: 0
+
+Camera.width: 1218
+Camera.height: 962
+
+# Camera frames per second 
+Camera.fps: 10
+# stereo baseline times fx 
+Camera.bf: 7.2338112416678121e+02
+# Color order of the images (0: BGR, 1: RGB. It is ignored if images are grayscale)
+Camera.RGB: 1
+
+# Close/Far threshold. Baseline times.
+ThDepth: 40
+
+# ============================================================
+
+# ===> NOTICE: Add camera parameters here <===
+LEFT.height: 962
+LEFT.width: 1218
+# 畸变系数
+LEFT.D: !!opencv-matrix
+   rows: 1
+   cols: 5
+   dt: d
+   data: [ -1.1094080097170179e-01, 1.5948619050594529e-01,
+       -4.8616897835728591e-03, -1.3424886656017085e-02,
+       -7.1678662318567385e-02 ]
+# 相机内参
+LEFT.K: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 1.5993386917236389e+03, 0., 5.3420684726363834e+02, 0.,
+       1.5899848208692895e+03, 4.3248680004770978e+02, 0., 0., 1. ]
+# 在立体校正过程中，相机为实现共面过程中所需要进行的旋转
+LEFT.R:  !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 9.8611396187438460e-01, 5.8089833590649525e-03,
+       -1.6596840033192733e-01, -6.2678686557678344e-03,
+       9.9997784504541831e-01, -2.2412587613129462e-03,
+       1.6595170387470815e-01, 3.2504046909924010e-03,
+       9.8612852450906530e-01 ]
+# 在立体校正过程后，相机在新坐标系下的投影矩阵
+LEFT.P:  !!opencv-matrix
+   rows: 3
+   cols: 4
+   dt: d
+   data: [ 1.6003223575607426e+03, 0., 7.8914894104003906e+02, 0., 0.,
+       1.6003223575607426e+03, 4.3631155014038086e+02, 0., 0., 0., 1.,
+       0. ]
+
+RIGHT.height: 962
+RIGHT.width: 1218
+RIGHT.D: !!opencv-matrix
+   rows: 1
+   cols: 5
+   dt: d
+   data: [ -1.7135003526035389e-01, -6.8338942981352579e-01,
+       -2.7570413127559028e-03, -9.3895026890480852e-03,
+       5.6935651371287470e+00 ]
+RIGHT.K: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 1.6166172086395450e+03, 0., 5.1105455442043757e+02, 0.,
+       1.6106598942521957e+03, 4.4396122687499292e+02, 0., 0., 1. ]
+RIGHT.R:  !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 9.9171476194026154e-01, 7.7611770038720591e-03,
+       -1.2822478341290050e-01, -7.5375560670572824e-03,
+       9.9996910760360747e-01, 2.2291448989395536e-03,
+       1.2823812303019194e-01, -1.2441744086211736e-03,
+       9.9174262580154060e-01 ]
+RIGHT.P:  !!opencv-matrix
+   rows: 3
+   cols: 4
+   dt: d
+   data: [ 1.6003223575607426e+03, 0., 7.8914894104003906e+02,
+       -7.2338112416678121e+02, 0., 1.6003223575607426e+03,
+       4.3631155014038086e+02, 0., 0., 0., 1., 0. ]
+
+#--------------------------------------------------------------------------------------------
+# ORB Parameters
+#--------------------------------------------------------------------------------------------
+
+# ORB Extractor: Number of features per image
+ORBextractor.nFeatures: 2000
+
+# ORB Extractor: Scale factor between levels in the scale pyramid 	
+ORBextractor.scaleFactor: 1.2
+
+# ORB Extractor: Number of levels in the scale pyramid	
+ORBextractor.nLevels: 8
+
+# ORB Extractor: Fast threshold
+# Image is divided in a grid. At each cell FAST are extracted imposing a minimum response.
+# Firstly we impose iniThFAST. If no corners are detected we impose a lower value minThFAST
+# You can lower these values if your images have low contrast			
+ORBextractor.iniThFAST: 20
+ORBextractor.minThFAST: 7
+
+#--------------------------------------------------------------------------------------------
+# Viewer Parameters
+#--------------------------------------------------------------------------------------------
+Viewer.KeyFrameSize: 0.6
+Viewer.KeyFrameLineWidth: 2
+Viewer.GraphLineWidth: 1
+Viewer.PointSize: 2
+Viewer.CameraSize: 0.7
+Viewer.CameraLineWidth: 3
+Viewer.ViewpointX: 0
+Viewer.ViewpointY: -100
+Viewer.ViewpointZ: -0.1
+Viewer.ViewpointF: 2000
+
