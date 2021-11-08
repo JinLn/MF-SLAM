@@ -13,7 +13,7 @@ This software is based on [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3) d
 
 ### Video
 [billbill](https://www.bilibili.com/video/BV1FR4y1t7sV/)
-[youtube]()
+[youtube](https://youtu.be/kFg15dfvC44)
 
 ### KITTI dataset experiment
 <a href="https://youtu.be/HyLNq-98LRo" target="_blank"><img src="https://github.com/JinLn/MF-SLAM/blob/main/Examples/picture/mf00.svg" 
@@ -98,7 +98,7 @@ This will create **libMF-SLAM.so**  at *lib* folder and the executables in *Exam
 
 1. Download a sequence from http://www.cvlibs.net/datasets/kitti/eval_odometry.php
  ```
-    ./stereo_test ./Vocabulary/ORBvoc.txt /home/jinln/jinln/DATASET/kitti/MF-dyna_yaml/KITTI_stereo_00-02.yaml /home/jinln/jinln/DATASET/kitti/00
+    ./stereo_test ../../Vocabulary/ORBvoc.txt /home/jinln/jinln/DATASET/kitti/MF-dyna_yaml/KITTI_stereo_00-02.yaml /home/jinln/jinln/DATASET/kitti/00
 ```
 
 3. Evaluation using [evo](https://github.com/MichaelGrupp/evo) tools
@@ -111,5 +111,5 @@ This will create **libMF-SLAM.so**  at *lib* folder and the executables in *Exam
 
 # 5. Self-recorded dataset Examples
 ```
-    ./stereo_test ./Vocabulary/ORBvoc.txt /home/jinln/jinln/DATASET/baslerstereodata/20210414/16-25/MF_01.yaml /home/jinln/jinln/DATASET/baslerstereodata/20210414/16-25/2021041406
+    ./stereo_test ../../Vocabulary/ORBvoc.txt /home/jinln/jinln/DATASET/baslerstereodata/20210414/16-25/MF_01.yaml /home/jinln/jinln/DATASET/baslerstereodata/20210414/16-25/2021041406
 ```
