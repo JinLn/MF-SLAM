@@ -49,7 +49,7 @@ If you use MF-SLAM in an academic work, please cite:
       
       title={{MF-SLAM}: Multi-focal SLAM {SLAM}},
       author={ Mingchi Feng, Jinglin Liu, Xin Wang, Chengnan Li.},
-      journal={CIRA 2021: Intelligent Robotics and Applications},
+      conference={ICIRA 2021: Intelligent Robotics and Applications},
       year={2021}
      }
 
