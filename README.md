@@ -11,9 +11,20 @@ We provide examples to run MF-SLAM in the [KITTI](http://www.cvlibs.net/datasets
 
 This software is based on [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3) developed by Carlos Campos, Richard Elvira, Juan J. Gómez Rodríguez, [José M. M. Montiel](http://webdiis.unizar.es/~josemari/), [Juan D. Tardos](http://webdiis.unizar.es/~jdtardos/).
 
-<a href="https://youtu.be/HyLNq-98LRo" target="_blank"><img src="https://img.youtube.com/vi/HyLNq-98LRo/0.jpg" 
-alt="ORB-SLAM2" width="240" height="180" border="10" /></a>
+### KITTI dataset experiment
+<a href="https://youtu.be/HyLNq-98LRo" target="_blank"><img src="https://github.com/JinLn/MF-SLAM/blob/main/Examples/picture/mf00.svg" 
+alt="ORB-SLAM2" width="400" height="400" border="0" /></a>
 
+### Self-recorded dataset experiment
+<a href="https://youtu.be/HyLNq-98LRo" target="_blank"><img src="https://github.com/JinLn/MF-SLAM/blob/main/Examples/picture/mf12_6mm%2612mm.svg" 
+alt="6mm&12mm" width="300" height="300" border="0" /><img src="https://github.com/JinLn/MF-SLAM/blob/main/Examples/picture/mf12_12mm%2616mm.svg" 
+alt="12mm&16mm" width="300" height="300" border="0" /><img src="https://github.com/JinLn/MF-SLAM/blob/main/Examples/picture/mf12_16mm%2625mm.svg" 
+alt="16mm&25mm" width="300" height="300" border="0" /></a>
+
+<a href="https://youtu.be/HyLNq-98LRo" target="_blank"><img src="https://github.com/JinLn/MF-SLAM/blob/main/Examples/picture/playground%20.svg" 
+alt="playground" width="300" height="300" border="0" /><img src="https://github.com/JinLn/MF-SLAM/blob/main/Examples/picture/Academic%20Building.svg" 
+alt="Academic_Building" width="300" height="300" border="0" /><img src="https://github.com/JinLn/MF-SLAM/blob/main/Examples/picture/library.svg" 
+alt="library" width="300" height="300" border="0" /></a>
 
 # 1. License
 
@@ -78,43 +89,18 @@ chmod +x build.sh
 
 This will create **libMF-SLAM.so**  at *lib* folder and the executables in *Examples* folder.
 
-# 4. EuRoC Examples
-[EuRoC dataset](http://projects.asl.ethz.ch/datasets/doku.php?id=kmavvisualinertialdatasets) was recorded with two pinhole cameras and an inertial sensor. We provide an example script to launch EuRoC sequences in all the sensor configurations.
+# 4. KITTI Examples
+[KITTI dataset](http://www.cvlibs.net/datasets/kitti/eval_odometry.php) was provide 11 sequences (00-10) with ground truth trajectories for training and 11 sequences (11-21) without ground truth for evaluation. For this benchmark you may provide results using monocular or stereo visual odometry, laser-based SLAM or algorithms that combine visual and LIDAR information. We provide an example script to launch KITTI sequences in all the sensor configurations.
 
-1. Download a sequence (ASL format) from http://projects.asl.ethz.ch/datasets/doku.php?id=kmavvisualinertialdatasets
-
-2. Open the script "euroc_examples.sh" in the root of the project. Change **pathDatasetEuroc** variable to point to the directory where the dataset has been uncompressed. 
-
-3. Execute the following script to process all the sequences with all sensor configurations:
+1. Download a sequence from http://www.cvlibs.net/datasets/kitti/eval_odometry.php
+ ```
+    ./stereo_test /home/jinln/Desktop/ORB_SLAM3/Vocabulary/ORBvoc.txt /home/jinln/jinln/DATASET/kitti/MF-dyna_yaml/KITTI_stereo_00-02.yaml /home/jinln/jinln/DATASET/kitti/00
 ```
-./euroc_examples
-```
+
+3. Evaluation using [evo](https://github.com/MichaelGrupp/evo) tools
 
 ## Evaluation
-EuRoC provides ground truth for each sequence in the IMU body reference. As pure visual executions report trajectories centered in the left camera, we provide in the "evaluation" folder the transformation of the ground truth to the left camera reference. Visual-inertial trajectories use the ground truth from the dataset.
 
-Execute the following script to process sequences and compute the RMS ATE:
 ```
-./euroc_eval_examples
+ evo_traj kitti KITTI_00_ORB.txt MF-SLAM_00.txt --ref=KITTI_00_gt.txt -p --plot_mode=xz
 ```
-
-# 5. TUM-VI Examples
-[TUM-VI dataset](https://vision.in.tum.de/data/datasets/visual-inertial-dataset) was recorded with two fisheye cameras and an inertial sensor.
-
-1. Download a sequence from https://vision.in.tum.de/data/datasets/visual-inertial-dataset and uncompress it.
-
-2. Open the script "tum_vi_examples.sh" in the root of the project. Change **pathDatasetTUM_VI** variable to point to the directory where the dataset has been uncompressed. 
-
-3. Execute the following script to process all the sequences with all sensor configurations:
-```
-./tum_vi_examples
-```
-
-## Evaluation
-In TUM-VI ground truth is only available in the room where all sequences start and end. As a result the error measures the drift at the end of the sequence. 
-
-Execute the following script to process sequences and compute the RMS ATE:
-```
-./tum_vi_eval_examples
-```
-
