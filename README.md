@@ -7,9 +7,13 @@
  
 DOI: 10.1007/978-3-030-89134-3_45
 
-We provide examples to run MF-SLAM in the [KITTI](http://www.cvlibs.net/datasets/kitti/) and [self-recorded dataset](添加地址). Videos of some example executions can be found at [MF-SLAM channel](添加地址).
+We provide examples to run MF-SLAM in the [KITTI](http://www.cvlibs.net/datasets/kitti/) and [self-recorded dataset](添加地址).
 
 This software is based on [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3) developed by Carlos Campos, Richard Elvira, Juan J. Gómez Rodríguez, [José M. M. Montiel](http://webdiis.unizar.es/~josemari/), [Juan D. Tardos](http://webdiis.unizar.es/~jdtardos/).
+
+### Video
+[billbill](https://www.bilibili.com/video/BV1FR4y1t7sV/)
+[youtube]()
 
 ### KITTI dataset experiment
 <a href="https://youtu.be/HyLNq-98LRo" target="_blank"><img src="https://github.com/JinLn/MF-SLAM/blob/main/Examples/picture/mf00.svg" 
@@ -103,4 +107,9 @@ This will create **libMF-SLAM.so**  at *lib* folder and the executables in *Exam
 
 ```
  evo_traj kitti KITTI_00_ORB.txt MF-SLAM_00.txt --ref=KITTI_00_gt.txt -p --plot_mode=xz
+```
+
+# 5. Self-recorded dataset Examples
+```
+    ./stereo_test ./Vocabulary/ORBvoc.txt /home/jinln/jinln/DATASET/baslerstereodata/20210414/16-25/MF_01.yaml /home/jinln/jinln/DATASET/baslerstereodata/20210414/16-25/2021041406
 ```
