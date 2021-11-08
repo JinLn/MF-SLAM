@@ -12,8 +12,9 @@ We provide examples to run MF-SLAM in the [KITTI](http://www.cvlibs.net/datasets
 This software is based on [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3) developed by Carlos Campos, Richard Elvira, Juan J. Gómez Rodríguez, [José M. M. Montiel](http://webdiis.unizar.es/~josemari/), [Juan D. Tardos](http://webdiis.unizar.es/~jdtardos/).
 
 ### Video
-[billbill](https://www.bilibili.com/video/BV1FR4y1t7sV/)
-[youtube](https://youtu.be/kFg15dfvC44)
+China: [billbill](https://www.bilibili.com/video/BV1FR4y1t7sV/)
+
+World: [youtube](https://youtu.be/kFg15dfvC44)
 
 ### KITTI dataset experiment
 <a href="https://youtu.be/HyLNq-98LRo" target="_blank"><img src="https://github.com/JinLn/MF-SLAM/blob/main/Examples/picture/mf00.svg" 
