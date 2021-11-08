@@ -17,19 +17,19 @@ China: [billbill](https://www.bilibili.com/video/BV1FR4y1t7sV/)
 World: [youtube](https://youtu.be/kFg15dfvC44)
 
 ### KITTI dataset experiment
-<a href="https://youtu.be/HyLNq-98LRo" target="_blank"><img src="https://github.com/JinLn/MF-SLAM/blob/main/Examples/picture/mf00.svg" 
-alt="ORB-SLAM2" width="400" height="400" border="0" /></a>
+<a href="https://youtu.be/HyLNq-98LRo" target="_blank"><div align=center><img src="https://github.com/JinLn/MF-SLAM/blob/main/Examples/picture/mf00.svg" 
+alt="ORB-SLAM2" width="200" height="200" border="0" /></a></div>
 
 ### Self-recorded dataset experiment
-<a href="https://youtu.be/HyLNq-98LRo" target="_blank"><img src="https://github.com/JinLn/MF-SLAM/blob/main/Examples/picture/mf12_6mm%2612mm.svg" 
+<a href="https://youtu.be/HyLNq-98LRo" target="_blank"><div align=center><img src="https://github.com/JinLn/MF-SLAM/blob/main/Examples/picture/mf12_6mm%2612mm.svg" 
 alt="6mm&12mm" width="200" height="200" border="0" /><img src="https://github.com/JinLn/MF-SLAM/blob/main/Examples/picture/mf12_12mm%2616mm.svg" 
 alt="12mm&16mm" width="200" height="200" border="0" /><img src="https://github.com/JinLn/MF-SLAM/blob/main/Examples/picture/mf12_16mm%2625mm.svg" 
-alt="16mm&25mm" width="200" height="200" border="0" /></a>
+alt="16mm&25mm" width="200" height="200" border="0" /></a></div>
 
-<a href="https://youtu.be/HyLNq-98LRo" target="_blank"><img src="https://github.com/JinLn/MF-SLAM/blob/main/Examples/picture/playground%20.svg" 
+<a href="https://youtu.be/HyLNq-98LRo" target="_blank"><div align=center><img src="https://github.com/JinLn/MF-SLAM/blob/main/Examples/picture/playground%20.svg" 
 alt="playground" width="200" height="200" border="0" /><img src="https://github.com/JinLn/MF-SLAM/blob/main/Examples/picture/Academic%20Building.svg" 
 alt="Academic_Building" width="200" height="200" border="0" /><img src="https://github.com/JinLn/MF-SLAM/blob/main/Examples/picture/library.svg" 
-alt="library" width="200" height="200" border="0" /></a>
+alt="library" width="200" height="200" border="0" /></a></div>
 
 # 1. License
 
@@ -111,6 +111,9 @@ This will create **libMF-SLAM.so**  at *lib* folder and the executables in *Exam
 ```
 
 # 5. Self-recorded dataset Examples
+
+Use two different focal length lenses to form stereo vision (recommended focal length ratio not to exceed 2 times), use [multi-focal-stereo-calib](https://github.com/JinLn/multi-focal-stereo-calib) to calibrate binocular camera, and the obtained parameters replace the parameters of the *.yaml* file.
+
 ```
     ./stereo_test ../../Vocabulary/ORBvoc.txt /home/jinln/jinln/DATASET/baslerstereodata/20210414/16-25/MF_01.yaml /home/jinln/jinln/DATASET/baslerstereodata/20210414/16-25/2021041406
 ```
