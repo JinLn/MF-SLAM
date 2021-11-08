@@ -3,7 +3,7 @@
 ###  Beta version, 21 October 2020
 **Authors:** Mingchi Feng, **Jinglin Liu**, Xin Wang, Chengnan Li, [MF-SLAM: Multi-focal SLAM](https://link.springer.com/chapter/10.1007/978-3-030-89134-3_45)
     
-*MF-SLAM * is a multi focal length visual slam, which can combine two cameras with different focal lengths to form stereo vision, or two cameras with the same focal length. It is improved on [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3) . Thank them very much for ORB-SLAM3's work and great efforts.
+**MF-SLAM** is a multi focal length visual slam, which can combine two cameras with different focal lengths to form stereo vision, or two cameras with the same focal length. It is improved on [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3), thank them very much for ORB-SLAM3's work and great efforts.
  
 DOI: 10.1007/978-3-030-89134-3_45
 
@@ -115,5 +115,5 @@ This will create **libMF-SLAM.so**  at *lib* folder and the executables in *Exam
 Use two different focal length lenses to form stereo vision (recommended focal length ratio not to exceed 2 times), use [multi-focal-stereo-calib](https://github.com/JinLn/multi-focal-stereo-calib) to calibrate binocular camera, and the obtained parameters replace the parameters of the *.yaml* file.
 
 ```
-    ./stereo_test ../../Vocabulary/ORBvoc.txt /home/jinln/jinln/DATASET/baslerstereodata/20210414/16-25/MF_01.yaml /home/jinln/jinln/DATASET/baslerstereodata/20210414/16-25/2021041406
+    ./stereo_test ../../Vocabulary/ORBvoc.txt /home/jinln/jinln/DATASET/baslerstereodata/20210414/12-16/MF_01.yaml /home/jinln/jinln/DATASET/baslerstereodata/20210414/12-16/2021041404
 ```
