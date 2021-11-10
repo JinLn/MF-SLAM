@@ -18,7 +18,7 @@ World: [youtube](https://youtu.be/kFg15dfvC44)
 
 ### KITTI dataset experiment
 <a href="https://youtu.be/HyLNq-98LRo" target="_blank"><div align=center><img src="https://github.com/JinLn/MF-SLAM/blob/main/Examples/picture/mf00.svg" 
-alt="ORB-SLAM2" width="200" height="200" border="0" /></a></div>
+alt="" width="200" height="200" border="0" /></a></div>
 
 ### Self-recorded dataset experiment
 <a href="https://youtu.be/HyLNq-98LRo" target="_blank"><div align=center><img src="https://github.com/JinLn/MF-SLAM/blob/main/Examples/picture/mf12_6mm%2612mm.svg" 
